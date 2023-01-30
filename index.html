@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-lg-7">
                     <h3 class="mb-4">Programmer and Developer</h3>
-                    <p>Hi, I am Ragul Adhithya M living in Coimbatore. I have done with my schooling at Vidhya Niketan Matric School in Coimbatore. Presently I am pursuing my UG degree at KUMARAGURU COLLEGE OF TECHNOLOGY. I love programming and development. Currently studying Cyber Security, Javascript, Bootstrap, My ambition is to become a Software Engineer and to get placed in a reputed software company.</p>
+                    <p>Aspiring Full Stack Dev & Competitive Coder from Coimbatore. Constantly looking for ways to grow and hone my skills in the tech space. #CodingIsLife 💻</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Ragul Adhithya</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">10 June 2003</span></h6></div>
@@ -423,26 +423,26 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" id="contactform" action="https://formspree.io/f/xknaobqz" method="POST">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    <input type="text" class="form-control p-4" id="name" name="Name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    <input type="email" class="form-control p-4" name="Email ID" id="email" placeholder="Your Email"
                                         required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                <input type="text" class="form-control p-4" id="subject" name="Subject" placeholder="Subject"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea class="form-control py-3 px-4" name="Message" rows="5" id="message" placeholder="Message"
                                     required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
@@ -457,6 +457,13 @@
             </div>
         </div>
     </div>
+    <script>
+        function resetForm(){
+          document.getElementById("contactform").reset();
+        }
+
+        window.onload = resetForm;
+        </script>
     <!-- Contact End -->
 
 
